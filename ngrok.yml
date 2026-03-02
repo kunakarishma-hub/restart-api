@@ -1,0 +1,7 @@
+version: "2"
+authtoken: 3AL4w7CnoBUHPuNNWSvkParVxZa_3X5nqy1No9qeCkwMKtXbY
+
+tunnels:
+  restart_api:
+    proto: http
+    addr: 3000
