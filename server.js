@@ -17,14 +17,8 @@ app.post('/restart', (req, res) => {
   res.status(202).json({ status: 'accepted', message: 'Restart initiated' });
 });
 
-app.post('/reboot', (req, res) => {
-  //const { service, requestedBy, reason } = req.body;
-  //console.log("Reboot API called", { service, requestedBy, reason });
-  res.status(202).json({ status: 'accepted', message: 'Reboot initiated' });
-});
-
 
 // *** This line must exist; otherwise the app exits immediately ***
 app.listen(PORT, () => {
-  console.log(`Dummy API running on http://localhost:${PORT}`);
+  console.log(`Dummy Restart API running on http://localhost:${PORT}`);
 });
