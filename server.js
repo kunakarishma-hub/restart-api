@@ -18,8 +18,8 @@ app.post('/restart', (req, res) => {
 });
 
 app.post('/reboot', (req, res) => {
-  const { service, requestedBy, reason } = req.body;
-  console.log("Reboot API called", { service, requestedBy, reason });
+  //const { service, requestedBy, reason } = req.body;
+  //console.log("Reboot API called", { service, requestedBy, reason });
   res.status(202).json({ status: 'accepted', message: 'Reboot initiated' });
 });
 
